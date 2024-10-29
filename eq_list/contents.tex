@@ -6,24 +6,46 @@
 \end{center}
 
 % Begin multicolumn layout
-\begin{multicols}{2}
+% \begin{multicols}{2}
+% \columnratio{0.35}
+% \begin{paracol}{2}
 
 \section{Lista de variables}
 Para desarrollar el listado de ecuaciones se utilizarán las siguientes variables:
 
 \begin{itemize}
-    \item $\eta$ \textit{Net Operating Profit After Tax}
-    \item $t$ \textit{Tax rate}
-    \item $c$ Capital
-    \item $a$ Activos
-    \item $p$ Pasivos
-    \item $r$ \textit{Return On Invested Capital}
-    \item $w$ \textit{Weighted average cost of capital}
-    \item $e$ \textit{Economic Value Added}
-    \item $\delta$ \textit{Operating income}
-    \item $I$ Inversión neta
-    \item $\gamma$ \textit{Free cash flow}
+    \item [$\eta$ \---] \textit{Net Operating Profit After Tax}
+    \item [$t$ \---] \textit{Tax rate}
+    \item [$c$ \---] Capital
+    \item [$a$ \---] Activos
+    \item [$p$ \---] Pasivos
+    \item [$s$ \---] Ventas
+    \item [$r$ \---] \textit{Return On Invested Capital}
+    \item [$w$ \---] \textit{Weighted average cost of capital}
+    \item [$e$ \---] \textit{Economic Value Added}
+    \item [$\delta$ \---] \textit{Operating income}
+    \item [$I$ \---] Inversión neta
+    \item [$\gamma$ \---] \textit{Free cash flow}
+    \item [$f_n$ \---] Factor de descuento a valor presente del año $n$.
+    \item [$F$ \---] Factor de descuento a valor presente de una perpetuidad.
+    \item [$g$ \---] Tasa de crecimiento
+    \item [$V$ \---] Valor
 \end{itemize}
+
+\section{Valor presente}
+
+Valor presente de un único pago recibido en $n$ años.
+\begin{equation}
+    f_n = \frac{1}{\left(1+w\right)^n}
+\end{equation}
+
+Valor presente del flujo a perpetuidad con un crecimiento $g$, recibido a partir del año $n$.
+
+\begin{equation}
+    F = \frac{1}{w-g}\cdot\frac{1}{\left(1+w\right)^{n-1}}
+\end{equation}
+
+
 
 \section{Valuacion por EVA}
 
@@ -52,14 +74,43 @@ Para desarrollar el listado de ecuaciones se utilizarán las siguientes variable
     e = c(r-w)
 \end{equation}
 
+\subsubsection*{Valuación por EVA}
+\begin{align*}
+    V   &= \sum_{n=1}^\infty f_n \cdot e_n \\
+        & + \left(a_{no.op.}+p_{gratuitos}\right) + c_1\\
+    V   &= \sum_{n=1}^{m-1} f_n \cdot e_n + F \cdot e_m\\
+        & + \left(a_{no.op.}+p_{gratuitos}\right) + c_1
+\end{align*}
 
-\section{Valor presente}
 
-asdfsa
+\section{Value drivers}
+
+La descomposición en Value Drivers consiste en separar el ROIC en los elementos que componen los gastos operativos.
+
 \begin{equation}
-    aldfj
+    \left(\frac{s}{s}+\frac{cost}{s}+\frac{op.ex.}{s}\right)\cdot \frac{s}{c}\cdot(1-t)
 \end{equation}
 
-\end{multicols}
+\section{Valuación por flujos descontados}
 
+\subsubsection*{Inversión neta}
+\begin{equation}
+    I_n = c_{n+1} - c_{n}
+\end{equation}
 
+\subsubsection*{Free cash flow}
+\begin{equation}
+    \gamma = \eta - I
+\end{equation}
+
+\subsubsection*{Valuación por free cash flow}
+
+\begin{align*}
+    V   &= \sum_{n=1}^\infty f_n \cdot \gamma_n \\
+        & + \left(a_{no.op.}+p_{gratuitos}\right)\\
+    V   &= \sum_{n=1}^{m-1} f_n \cdot \gamma_n + F \cdot \gamma_m\\
+        & + \left(a_{no.op.}+p_{gratuitos}\right)
+\end{align*}
+
+% \end{multicols}
+% \end{paracol}
