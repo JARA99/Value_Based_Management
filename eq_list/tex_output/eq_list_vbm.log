@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.21)  29 OCT 2024 15:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.21)  29 OCT 2024 15:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -60,10 +60,6 @@ File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
 \c@tracingmulticols=\count196
-
-
-Package multicol Warning: May not work with the twocolumn option on input line 142.
-
 \mult@box=\box50
 \multicol@leftmargin=\dimen142
 \c@unbalance=\count197
@@ -412,14 +408,14 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \headsep=25.0pt
 * \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=4.0pt
+* \marginparwidth=44.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
 * \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
-* \@twocolumntrue
+* \@twocolumnfalse
 * \@twosidefalse
 * \@mparswitchfalse
 * \@reversemarginfalse
@@ -460,9 +456,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[2
-
-] (tex_output/eq_list_vbm.aux
+[2] (tex_output/eq_list_vbm.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
 )
@@ -470,15 +464,15 @@ Package rerunfilecheck Info: File `eq_list_vbm.out' has not changed.
 (rerunfilecheck)             Checksum: 5CA4C7262ADC733F2694AE837E40D65F;715.
  ) 
 Here is how much of TeX's memory you used:
- 11667 strings out of 480112
- 187119 string characters out of 5892631
- 605779 words of memory out of 5000000
- 29456 multiletter control sequences out of 15000+600000
+ 11665 strings out of 480112
+ 187081 string characters out of 5892631
+ 606753 words of memory out of 5000000
+ 29454 multiletter control sequences out of 15000+600000
  475919 words of font info for 50 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
- 68i,11n,77p,342b,363s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,12n,77p,342b,546s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/jorgealejandro/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on tex_output/eq_list_vbm.pdf (2 pages, 110711 bytes).
+Output written on tex_output/eq_list_vbm.pdf (2 pages, 110732 bytes).
 PDF statistics:
  103 PDF objects out of 1000 (max. 8388607)
  79 compressed objects within 1 object stream
