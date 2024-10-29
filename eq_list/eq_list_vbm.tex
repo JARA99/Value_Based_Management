@@ -1,0 +1,34 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,mexico]{babel}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{lipsum} % Package for Lorem Ipsum text
+\usepackage[hidelinks]{hyperref}
+
+\geometry{top=2cm,bottom=2cm,left=2cm,right=2cm}
+
+% Set up header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textbf{Jorge Alejandro}}
+\fancyhead[C]{\textbullet \ \ octubre 2024 \ \textbullet \ \ V.B.M. \ \textbullet}
+\fancyhead[R]{\href{https://github.com/JARA99}{github.com/JARA99}}
+\renewcommand{\headrulewidth}{0.5pt}
+
+% Section formatting for title look
+\titleformat{\section}{\bfseries\Large}{}{0em}{}
+
+% Reduce the space between columns
+\setlength{\columnsep}{10pt}  % Adjust the value to reduce the gap
+
+% Document begins
+\begin{document}
+
+\input{contents.tex}
+
+\end{document}
+
